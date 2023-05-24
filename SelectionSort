@@ -1,0 +1,15 @@
+
+list = [87,32,21,54,99,1,4,73,12]
+print(list)
+for i in range(len(list)):
+  minpos=i
+  for j in range(i,len(list)):
+    if list[j]<list[minpos]:
+      minpos=j
+  temp=list[i]
+  list[i]=list[minpos]
+  list[minpos]=temp
+print(list)
+# Best Time Complexity: O(n2)
+# Average Time Complexity: O(n2)
+# Worst Time Complexity: O(n2)
